@@ -1,3 +1,6 @@
+from typing import Any
+
+
 class Stack:
     def __init__(self):
         self.stack = []
@@ -5,7 +8,7 @@ class Stack:
     def is_empty(self):
         return len(self.stack) == 0
 
-    def push(self, item):
+    def push(self, item: Any):
         self.stack.append(item)
 
     def pop(self):
